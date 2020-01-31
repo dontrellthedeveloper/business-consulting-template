@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c35b58c2-3a15-4c9b-adc2-373f1cd24199" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-business-consulting-about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-business-consulting-about-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-business-consulting-blog-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-business-consulting-blog-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-business-consulting-blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-business-consulting-blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-business-consulting-cases-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-business-consulting-cases-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-business-consulting-cases.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-business-consulting-cases.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-business-consulting-contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-business-consulting-contact-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-business-consulting-expertise-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-business-consulting-expertise-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-business-consulting-expertise.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-business-consulting-expertise.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-business-consulting-team-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-business-consulting-team-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-business-consulting-team.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-business-consulting-team.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-business-consulting-tertimonials.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-business-consulting-tertimonials.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-business-consulting.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580467069023</updated>
-      <workItem from="1580467070609" duration="1961000" />
+      <workItem from="1580467070609" duration="2089000" />
     </task>
     <servers />
   </component>
