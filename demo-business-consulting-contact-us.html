@@ -289,7 +289,7 @@
 				</div>
 
 				<!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
-				<div id="googlemaps" class="google-map mt-4 mb-0"></div>
+				<div id="map" class="google-map mt-4 mb-0"></div>
 
 
 			</div> 
@@ -298,7 +298,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 text-center pb-4">
-							<p>2018 © Porto <span class="text-color-light">Business Consulting</span> - Copyright All Rights Reserved</p>
+							<p>2020 © WESS & CLARKE <span class="text-color-light">Business Consulting</span> - Copyright All Rights Reserved</p>
 						</div>
 					</div>
 				</div>
@@ -344,95 +344,408 @@
 		<script src="js/theme.init.js"></script>
 
 
-		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
 		<script>
+			function initMap() {
+				var myLatLng = {lat: 40.752460, lng: -73.968340};
 
-			/*
-			Map Settings
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 14,
+					center: myLatLng,
+					styles: [
+						{
+							"featureType": "all",
+							"elementType": "all",
+							"stylers": [
+								{
+									"visibility": "on"
+								}
+							]
+						},
+						{
+							"featureType": "all",
+							"elementType": "labels",
+							"stylers": [
+								{
+									"visibility": "on"
+								},
+								{
+									"saturation": "-100"
+								}
+							]
+						},
+						{
+							"featureType": "all",
+							"elementType": "labels.text.fill",
+							"stylers": [
+								{
+									"saturation": 36
+								},
+								{
+									"color": "#000000"
+								},
+								{
+									"lightness": 40
+								},
+								{
+									"visibility": "off"
+								}
+							]
+						},
+						{
+							"featureType": "all",
+							"elementType": "labels.text.stroke",
+							"stylers": [
+								{
+									"visibility": "off"
+								},
+								{
+									"color": "#000000"
+								},
+								{
+									"lightness": 16
+								}
+							]
+						},
+						{
+							"featureType": "all",
+							"elementType": "labels.icon",
+							"stylers": [
+								{
+									"visibility": "off"
+								}
+							]
+						},
+						{
+							"featureType": "administrative",
+							"elementType": "geometry.fill",
+							"stylers": [
+								{
+									"color": "#000000"
+								},
+								{
+									"lightness": 20
+								}
+							]
+						},
+						{
+							"featureType": "administrative",
+							"elementType": "geometry.stroke",
+							"stylers": [
+								{
+									"color": "#000000"
+								},
+								{
+									"lightness": 17
+								},
+								{
+									"weight": 1.2
+								}
+							]
+						},
+						{
+							"featureType": "landscape",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#000000"
+								},
+								{
+									"lightness": 20
+								}
+							]
+						},
+						{
+							"featureType": "landscape",
+							"elementType": "geometry.fill",
+							"stylers": [
+								{
+									"color": "#4d6059"
+								}
+							]
+						},
+						{
+							"featureType": "landscape",
+							"elementType": "geometry.stroke",
+							"stylers": [
+								{
+									"color": "#4d6059"
+								}
+							]
+						},
+						{
+							"featureType": "landscape.natural",
+							"elementType": "geometry.fill",
+							"stylers": [
+								{
+									"color": "#4d6059"
+								}
+							]
+						},
+						{
+							"featureType": "poi",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"lightness": 21
+								}
+							]
+						},
+						{
+							"featureType": "poi",
+							"elementType": "geometry.fill",
+							"stylers": [
+								{
+									"color": "#4d6059"
+								}
+							]
+						},
+						{
+							"featureType": "poi",
+							"elementType": "geometry.stroke",
+							"stylers": [
+								{
+									"color": "#4d6059"
+								}
+							]
+						},
+						{
+							"featureType": "road",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"visibility": "on"
+								},
+								{
+									"color": "#7f8d89"
+								}
+							]
+						},
+						{
+							"featureType": "road",
+							"elementType": "geometry.fill",
+							"stylers": [
+								{
+									"color": "#7f8d89"
+								}
+							]
+						},
+						{
+							"featureType": "road.highway",
+							"elementType": "geometry.fill",
+							"stylers": [
+								{
+									"color": "#7f8d89"
+								},
+								{
+									"lightness": 17
+								}
+							]
+						},
+						{
+							"featureType": "road.highway",
+							"elementType": "geometry.stroke",
+							"stylers": [
+								{
+									"color": "#7f8d89"
+								},
+								{
+									"lightness": 29
+								},
+								{
+									"weight": 0.2
+								}
+							]
+						},
+						{
+							"featureType": "road.arterial",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#000000"
+								},
+								{
+									"lightness": 18
+								}
+							]
+						},
+						{
+							"featureType": "road.arterial",
+							"elementType": "geometry.fill",
+							"stylers": [
+								{
+									"color": "#7f8d89"
+								}
+							]
+						},
+						{
+							"featureType": "road.arterial",
+							"elementType": "geometry.stroke",
+							"stylers": [
+								{
+									"color": "#7f8d89"
+								}
+							]
+						},
+						{
+							"featureType": "road.local",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#000000"
+								},
+								{
+									"lightness": 16
+								}
+							]
+						},
+						{
+							"featureType": "road.local",
+							"elementType": "geometry.fill",
+							"stylers": [
+								{
+									"color": "#7f8d89"
+								}
+							]
+						},
+						{
+							"featureType": "road.local",
+							"elementType": "geometry.stroke",
+							"stylers": [
+								{
+									"color": "#7f8d89"
+								}
+							]
+						},
+						{
+							"featureType": "transit",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#000000"
+								},
+								{
+									"lightness": 19
+								}
+							]
+						},
+						{
+							"featureType": "water",
+							"elementType": "all",
+							"stylers": [
+								{
+									"color": "#2b3638"
+								},
+								{
+									"visibility": "on"
+								}
+							]
+						},
+						{
+							"featureType": "water",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#2b3638"
+								},
+								{
+									"lightness": 17
+								}
+							]
+						},
+						{
+							"featureType": "water",
+							"elementType": "geometry.fill",
+							"stylers": [
+								{
+									"color": "#24282b"
+								}
+							]
+						},
+						{
+							"featureType": "water",
+							"elementType": "geometry.stroke",
+							"stylers": [
+								{
+									"color": "#24282b"
+								}
+							]
+						},
+						{
+							"featureType": "water",
+							"elementType": "labels",
+							"stylers": [
+								{
+									"visibility": "off"
+								}
+							]
+						},
+						{
+							"featureType": "water",
+							"elementType": "labels.text",
+							"stylers": [
+								{
+									"visibility": "off"
+								}
+							]
+						},
+						{
+							"featureType": "water",
+							"elementType": "labels.text.fill",
+							"stylers": [
+								{
+									"visibility": "off"
+								}
+							]
+						},
+						{
+							"featureType": "water",
+							"elementType": "labels.text.stroke",
+							"stylers": [
+								{
+									"visibility": "off"
+								}
+							]
+						},
+						{
+							"featureType": "water",
+							"elementType": "labels.icon",
+							"stylers": [
+								{
+									"visibility": "off"
+								}
+							]
+						}
+					]
+				});
 
-				Find the Latitude and Longitude of your address:
-					- https://www.latlong.net/
-					- http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude/
+				var contentString = '<div id="content">'+
+						'<div id="siteNotice">'+
+						'</div>'+
+						'<h1 id="firstHeading" class="firstHeading">Wess & Clarke</h1>'+
+						'<div id="bodyContent">'+
+						'<p>' +	'Wess & Clark targets company executives and provide them with consultants, also known as industry-specific specialists and subject-matter experts, usually trained in management or business schools.  '+
 
-			*/
+						'<hr>' +
+						'<b>Main Address:</b> 333 E 47th St New York, NY 10017 ' +
+						'</div>'+
+						'</div>';
 
-			// Map Markers
-			var mapMarkers = [{
-				address: "New York, NY 10017",
-				html: "<strong>Porto Business Consulting</strong><br>123 Porto Blvd, Suite 100<br>New York, NY",
-				icon: {
-					image: "img/pin-light.png",
-					iconsize: [26, 46],
-					iconanchor: [12, 46]
-				},
-				popup: true
-			}];
+				var infowindow = new google.maps.InfoWindow({
+					content: contentString
+				});
 
-			// Map Initial Location
-			var initLatitude = 40.75198;
-			var initLongitude = -73.96978;
-
-			// Map Extended Settings
-			var mapSettings = {
-				controls: {
-					draggable: (($.browser.mobile) ? false : true),
-					panControl: true,
-					zoomControl: true,
-					mapTypeControl: true,
-					scaleControl: true,
-					streetViewControl: true,
-					overviewMapControl: true
-				},
-				scrollwheel: false,
-				markers: mapMarkers,
-				latitude: initLatitude,
-				longitude: initLongitude,
-				zoom: 16
-			};
-
-			var map = $('#googlemaps').gMap(mapSettings),
-				mapRef = $('#googlemaps').data('gMap.reference');
-
-			// Map text-center At
-			var mapCenterAt = function(options, e) {
-				e.preventDefault();
-				$('#googlemaps').gMap("centerAt", options);
+				var marker = new google.maps.Marker({
+					position: myLatLng,
+					map: map,
+					title: 'Hello World!'
+				});
+				marker.addListener('click', function() {
+					infowindow.open(map, marker);
+				});
 			}
-
-			// Create an array of styles.
-			var mapColor = "#cfa968";
-
-			var styles = [{
-				stylers: [{
-					hue: mapColor
-				}]
-			}, {
-				featureType: "road",
-				elementType: "geometry",
-				stylers: [{
-					lightness: 0
-				}, {
-					visibility: "simplified"
-				}]
-			}, {
-				featureType: "road",
-				elementType: "labels",
-				stylers: [{
-					visibility: "off"
-				}]
-			}];
-
-			// Styles from https://snazzymaps.com/
-			var styles = [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#090A0D"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#090A0D"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#090A0D"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#090A0D"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#090A0D"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#090A0D"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#090A0D"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#090A0D"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#090A0D"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#090A0D"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#090A0D"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#090A0D"},{"lightness":17}]}];
-
-			var styledMap = new google.maps.StyledMapType(styles, {
-				name: 'Styled Map'
-			});
-
-			mapRef.mapTypes.set('map_style', styledMap);
-			mapRef.setMapTypeId('map_style');
-
 		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMHl6SCCKSBOp1EODsZLGx-VhUrFxk3Pk&callback=initMap" async defer></script>
 
 
 		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
