@@ -4061,7 +4061,8 @@ window.theme.fn = {
 		loop: true,
 		autoplay: true,
 		position: '50% 50%',
-		posterType: 'detect'
+		posterType: 'detect',
+		mobile: true
 	};
 
 	PluginVideoBackground.prototype = {

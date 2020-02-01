@@ -21,7 +21,7 @@
     width: auto;
     height: auto;
     z-index: -1;
-    background: url("/traffic.jpg") no-repeat;
+    background: url("/video/traffic.jpg") no-repeat;
     background-size: cover;
 }
 

@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c35b58c2-3a15-4c9b-adc2-373f1cd24199" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-business-consulting-contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-business-consulting-contact-us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic.ogv" beforeDir="false" afterPath="$PROJECT_DIR$/video/traffic.ogv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic.webm" beforeDir="false" afterPath="$PROJECT_DIR$/video/traffic.webm" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +62,7 @@
       <updated>1580467069023</updated>
       <workItem from="1580467070609" duration="15836000" />
       <workItem from="1580540860150" duration="362000" />
-      <workItem from="1580541267879" duration="6009000" />
+      <workItem from="1580541267879" duration="8051000" />
     </task>
     <servers />
   </component>
